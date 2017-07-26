@@ -5,11 +5,7 @@ $(function() {
     let startTime = Date.now();
     let time = 2000;
     let clockwise = 1;
-    let cp1x, cp1y, cp2x, cp2y;
-    // 初始状态
-    // ctx.bezierCurveTo(90, 28, 92, 179, 200, 100);
-    // 末尾状态
-    // ctx.bezierCurveTo(145, 100, 41, 100, 200, 100);   
+    let cp1x, cp1y, cp2x, cp2y;  
     requestAnimationFrame(function waveDraw() {  
         let t = Math.min(1.0, (Date.now() - startTime) / time);
         if(clockwise) {
